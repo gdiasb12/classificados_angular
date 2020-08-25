@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node generateData.js > db.json",
+    "start": "json-server db.json -m ./node_modules/json-server-auth -r routes.json --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.16.1",
+    "json-server-auth": "^2.0.2"
+  },
+  "dependencies": {
+    "faker": "^5.0.0"
+  }
+}
